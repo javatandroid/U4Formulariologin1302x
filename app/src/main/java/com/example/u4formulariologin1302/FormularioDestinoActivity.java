@@ -23,9 +23,9 @@ public class FormularioDestinoActivity extends AppCompatActivity {
 
         Bundle b = getIntent().getExtras();
         if(b!=null){
-            String usuario = b.getString(FormularioActivity.EXTRA_USUARIO);
-            String mail = b.getString(FormularioActivity.EXTRA_MAIL);
-            String contraseña = b.getString(FormularioActivity.EXTRA_CONTRASEÑA);
+            String usuario = b.getString(FormularioActivity.EXTRA_USUARIOFORM);
+            String mail = b.getString(FormularioActivity.EXTRA_MAILFORM);
+            String contraseña = b.getString(FormularioActivity.EXTRA_CONTRASEÑAFORM);
 
             tvFormDusuario.setText(usuario);
             tvFormDmail.setText(mail);

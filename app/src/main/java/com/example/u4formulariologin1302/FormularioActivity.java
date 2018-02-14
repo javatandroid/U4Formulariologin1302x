@@ -8,9 +8,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class FormularioActivity extends AppCompatActivity {
-    static final String EXTRA_USUARIO = "USUARIO";
-    static final String EXTRA_MAIL = "MAIL";
-    static final String EXTRA_CONTRASEÑA = "CONTRASEÑA";
+    static final String EXTRA_USUARIOFORM = "USUARIO";
+    static final String EXTRA_MAILFORM = "MAIL";
+    static final String EXTRA_CONTRASEÑAFORM = "CONTRASEÑA";
 
     EditText etFormUsuario, etFormMail, etFormCont, etFormCont2;
 
@@ -38,12 +38,15 @@ public class FormularioActivity extends AppCompatActivity {
             }
         }else{
             Intent i = new Intent(getApplicationContext(), FormularioDestinoActivity.class);
-            i.putExtra(EXTRA_USUARIO, usuario);
-            i.putExtra(EXTRA_MAIL, mail);
-            i.putExtra(EXTRA_CONTRASEÑA, contraseña);
+            i.putExtra(EXTRA_USUARIOFORM, usuario);
+            i.putExtra(EXTRA_MAILFORM, mail);
+            i.putExtra(EXTRA_CONTRASEÑAFORM, contraseña);
             startActivity(i);
 
         }
 
+    }
+
+    public class EXTRA_USUARIO {
     }
 }
