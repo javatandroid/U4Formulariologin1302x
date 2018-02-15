@@ -47,6 +47,4 @@ public class FormularioActivity extends AppCompatActivity {
 
     }
 
-    public class EXTRA_USUARIO {
-    }
 }
